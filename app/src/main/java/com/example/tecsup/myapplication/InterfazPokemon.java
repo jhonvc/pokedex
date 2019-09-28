@@ -10,6 +10,9 @@ import retrofit2.http.Query;
 public interface InterfazPokemon {
     @GET("pokemon/?limit=151")
     Call<pokedex> obtenerPokedex(@Query("limit") int cantidad);
+    @GET("pokemon/{codigo}/")
+    Call<Pokemon>
+
     }
 
 

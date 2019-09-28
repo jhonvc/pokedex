@@ -34,6 +34,8 @@ public class AdaptadorPokedex extends RecyclerView.Adapter<Pokedexholder> {
     @Override
     public void onBindViewHolder(@NonNull Pokedexholder holder, int position) {
         holder.nombrePokemon.setText(datos.get(position).getName());
+        holder.id=position +1;
+        
 
     }
 

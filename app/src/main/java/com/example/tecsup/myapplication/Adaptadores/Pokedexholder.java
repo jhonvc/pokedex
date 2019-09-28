@@ -17,6 +17,8 @@ public class Pokedexholder extends RecyclerView.ViewHolder {
     TextView nombrePokemon;
     CardView cv;
     Context context;
+    int id;
+
 
     public Pokedexholder(@NonNull View itemView,Context c){
         super(itemView);
@@ -28,6 +30,7 @@ public class Pokedexholder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(context,DetallePokemon.class);
+                intent.putExtra("codigo_pokemon",id);
         context.startActivity(intent);
             }
         });

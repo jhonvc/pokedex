@@ -1,7 +1,10 @@
 package com.example.tecsup.myapplication;
 
 public class Pokemon {
+    int id;
+
     String name;
+    SpritePokemon sprites;
     String url;
 
     public Pokemon() {
